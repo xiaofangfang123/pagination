@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>简单的分页插件（Jquery）</title>
+		<link rel="stylesheet" type="text/css" href="css/zxf_page.css"/>
+	</head>
+	<body>
+		<div class="zxf_pagediv"></div>
+	</body>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/zxf_page.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".zxf_pagediv").createPage({
+			pageNum: 50,//总页码
+			current: 5,//当前页
+			shownum: 7,//每页显示个数
+//			activepage: "",//当前页选中样式
+//			activepaf: "",//下一页选中样式
+			backfun: function(e) {
+//				console.log(e);//回调
+			}
+		});
+	</script>
+</html>
